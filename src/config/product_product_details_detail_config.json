@@ -1,0 +1,46 @@
+{
+
+"product": [
+    {
+        "key": "ProductId",
+        "type": "keyid",
+        "UIComponentTitle": "Product"
+    }
+        ,{
+        "key": "ProductName",
+        "label": "ProductName",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Price",
+        "label": "Price",
+        "type": "text",
+        "editable": true,
+        "validators": [
+             "isFloat"
+, "isPositive"
+        ]
+                            }
+    ,{
+        "key": "Description",
+        "label": "Description",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "StockQuantity",
+        "label": "StockQuantity",
+        "type": "text",
+        "editable": true,
+        "validators": [
+             "isNumber"
+, "isPositive"
+        ]
+                            }
+]
+}

@@ -1,0 +1,18 @@
+{
+
+"shoppingcart": [
+    {
+        "key": "CartId",
+        "type": "keyid",
+        "UIComponentTitle": "ShoppingCart"
+    }
+        ,{
+        "key": "CreationDate",
+        "label": "CreationDate",
+        "type": "date",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+]
+}

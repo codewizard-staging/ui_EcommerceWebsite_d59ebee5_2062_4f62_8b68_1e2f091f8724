@@ -1,0 +1,270 @@
+{
+        "order": [
+                        {
+                            "key": "OrderId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "OrderDate",
+                            "label": "OrderDate",
+                            "type": "date",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "OrderDate is required"
+                            ]
+                        },
+                        {
+                            "key": "TotalAmount",
+                            "label": "TotalAmount",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Double",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "TotalAmount is required"
+                            ]
+                        },
+                    {
+                        "key": "Ordercustomer",
+                        "type": "keyid"
+                    },
+                                    {
+                        "key": "Orderproducts",
+                        "type": "keyid"
+                    }  
+                        ]
+,        "payment": [
+                        {
+                            "key": "PaymentId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "PaymentDate",
+                            "label": "PaymentDate",
+                            "type": "date",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "PaymentDate is required"
+                            ]
+                        },
+                        {
+                            "key": "Amount",
+                            "label": "Amount",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Double",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "Amount is required"
+                            ]
+                        },
+                        {
+                            "key": "PaymentMethod",
+                            "label": "PaymentMethod",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "PaymentMethod is required"
+                            ]
+                        },
+                    {
+                        "key": "Paymentorder",
+                        "type": "keyid"
+                    }  
+                        ]
+,        "category": [
+                        {
+                            "key": "CategoryId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "CategoryName",
+                            "label": "CategoryName",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "CategoryName is required"
+                            ]
+                        },
+                    {
+                        "key": "Categoryproducts",
+                        "type": "keyid"
+                    }  
+                        ]
+,        "shoppingcart": [
+                        {
+                            "key": "CartId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "CreationDate",
+                            "label": "CreationDate",
+                            "type": "date",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "CreationDate is required"
+                            ]
+                        },
+                    {
+                        "key": "ShoppingCartcustomer",
+                        "type": "keyid"
+                    },
+                                    {
+                        "key": "ShoppingCartproducts",
+                        "type": "keyid"
+                    }  
+                        ]
+,        "customer": [
+                        {
+                            "key": "CustomerId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "Name",
+                            "label": "Name",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Name is required"
+                            ]
+                        },
+                        {
+                            "key": "Email",
+                            "label": "Email",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Email is required"
+                            ]
+                        },
+                        {
+                            "key": "Password",
+                            "label": "Password",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Password is required"
+                            ]
+                        },
+                        {
+                            "key": "Address",
+                            "label": "Address",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Address is required"
+                            ]
+                        },
+                    {
+                        "key": "Customerorders",
+                        "type": "keyid"
+                    }  
+                        ]
+,        "product": [
+                        {
+                            "key": "ProductId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "ProductName",
+                            "label": "ProductName",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "ProductName is required"
+                            ]
+                        },
+                        {
+                            "key": "Price",
+                            "label": "Price",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Double",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "Price is required"
+                            ]
+                        },
+                        {
+                            "key": "Description",
+                            "label": "Description",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Description is required"
+                            ]
+                        },
+                        {
+                            "key": "StockQuantity",
+                            "label": "StockQuantity",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Int32",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "StockQuantity is required"
+                            ]
+                        },
+                    {
+                        "key": "Productcategory",
+                        "type": "keyid"
+                    }  
+                        ]
+}
